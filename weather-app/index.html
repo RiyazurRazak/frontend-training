@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./assets/styles/style.css" rel="stylesheet" />
+    <script src="./assets/scripts/script.js" defer></script>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="location-and-date">
+        <select
+          class="location-and-date__location"
+          id="city-selection"
+          value="chennai"
+        >
+          <option value="chennai">Chennai</option>
+          <option value="erode">Erode</option>
+          <option value="new delhi">New Delhi</option>
+          <option value="london">London</option>
+          <option value="paris">Paris</option>
+          <option value="tokyo">Tokyo</option>
+          <option value="seoul">Seoul</option>
+          <option value="barcelona">Barcelona</option>
+          <option value="new york">New York</option>
+          <option value="coimbatore">Coimbatore</option>
+        </select>
+        <br />
+        <div>
+          <time id="timestamp"></time>
+        </div>
+      </div>
+
+      <div class="current-temperature">
+        <div class="current-temperature__icon-container">
+          <img
+            id="current-weather-icon"
+            class="current-temperature__icon"
+            alt="ico"
+          />
+        </div>
+        <div class="current-temperature__content-container">
+          <div class="current-temperature__value" id="current-temp"></div>
+          <div
+            class="current-temperature__summary"
+            id="current-weather-summary"
+          ></div>
+        </div>
+      </div>
+
+      <div class="current-stats">
+        <div>
+          <div class="current-stats__value" id="current-temp-high"></div>
+          <div class="current-stats__label">High</div>
+          <div class="current-stats__value" id="current-temp-low"></div>
+          <div class="current-stats__label">Low</div>
+        </div>
+        <div>
+          <div class="current-stats__value" id="current-wind-speed"></div>
+          <div class="current-stats__label">Wind</div>
+          <div class="current-stats__value" id="current-wind-deg"></div>
+          <div class="current-stats__label">deg</div>
+        </div>
+        <div>
+          <div class="current-stats__value" id="sunrise"></div>
+          <div class="current-stats__label">Sunrise</div>
+          <div class="current-stats__value" id="sunset"></div>
+          <div class="current-stats__label">Sunset</div>
+        </div>
+      </div>
+
+      <div class="weather-by-hour">
+        <h2 class="weather-by-hour__heading">Today's weather</h2>
+        <div
+          class="weather-by-hour__container"
+          id="today-weather-container"
+        ></div>
+      </div>
+
+      <div class="next-5-days">
+        <h2 class="next-5-days__heading">Next 5 days</h2>
+        <div class="next-5-days__container" id="next-5-days-container"></div>
+      </div>
+    </main>
+  </body>
+</html>

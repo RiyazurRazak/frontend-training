@@ -107,6 +107,27 @@ section section h3{
 
 @media only screen and (max-width: 500px) {
     body{
-        padding: 20px 0px;
+        padding: 20px 5px;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .header h1{
+        margin-bottom: 0;
+        font-size: 24px;
+    }
+    .links{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    table{
+        table-layout: auto;
+    }
+    td{
+        width: 50% !important;
+    }
+    td h3{
+        font-size: 16px;
     }
   }

@@ -1,1 +1,38 @@
-/* styles goes here */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    position: relative;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    transition: transform 0.8s;
+}
+
+.left-icon{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.right-icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.slider{
+    display: flex;
+    width: 400vw;
+    height: 100vh;
+}
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}

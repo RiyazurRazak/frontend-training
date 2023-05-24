@@ -5,6 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Picker Carousel</title>
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <script src="./assets/js/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="arrow-container">
+        <div class="left-icon" id="left-icon">
+          <img
+            src="./assets/images/chevron-left-solid.svg"
+            alt="icon"
+            width="16px"
+          />
+        </div>
+        <div class="right-icon" id="right-icon">
+          <img
+            src="./assets/images/chevron-right-solid.svg"
+            alt="icon"
+            width="16px"
+          />
+        </div>
+      </div>
+      <section class="slider">
+        <div class="slide">
+          <input type="color" class="picker" value="#ffffff" />
+        </div>
+        <div class="slide">
+          <input type="color" value="#ffffff" class="picker" />
+        </div>
+        <div class="slide">
+          <input type="color" class="picker" value="#ffffff" />
+        </div>
+        <div class="slide">
+          <input type="color" class="picker" value="#ffffff" />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

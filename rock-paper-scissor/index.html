@@ -5,8 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissor Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="./assets/js/script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <section class="playground">
+      <div class="player">
+        <h3>Player (You)</h3>
+        <img
+          id="player-move"
+          src="./assets/images/placeholder.webp"
+          alt="placeholder"
+        />
+      </div>
+      <div class="score">
+        <h2>Score</h2>
+        <h1 id="score">0 - 0</h1>
+      </div>
+      <div class="bot">
+        <h3>Jarvis (BOT)</h3>
+        <img
+          id="bot-move"
+          src="./assets/images/placeholder.webp"
+          alt="placeholder"
+        />
+      </div>
+    </section>
+    <br />
+    <h3 class="title">Choose any one option</h3>
+    <section class="controls">
+      <img
+        src="./assets/images/rock.png"
+        alt="rock"
+        class="control-btn"
+        id="rock"
+      />
+      <img
+        src="./assets/images/paper.png"
+        alt="paper"
+        class="control-btn"
+        id="paper"
+      />
+      <img
+        src="./assets/images/scissor.png"
+        alt="scissor"
+        class="control-btn"
+        id="scissor"
+      />
+    </section>
+    <br />
+  </body>
 </html>

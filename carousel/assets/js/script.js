@@ -9,7 +9,6 @@ rightIconElement.addEventListener("click", () => {
   if (counter > 300) counter = 0;
   leftIconElement.style.left = `${counter + 1}vw`;
   rightIconElement.style.right = `-${counter}vw`;
-  document.body.tran;
   document.body.style.transform = `translateX(-${counter}vw)`;
 });
 
@@ -18,7 +17,6 @@ leftIconElement.addEventListener("click", () => {
   if (counter === -100) counter = 300;
   leftIconElement.style.left = `${counter + 1}vw`;
   rightIconElement.style.right = `-${counter}vw`;
-  document.body.tran;
   document.body.style.transform = `translateX(-${counter}vw)`;
 });
 

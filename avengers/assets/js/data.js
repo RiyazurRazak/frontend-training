@@ -27,6 +27,25 @@ const thanosIcon = new LeafIcon({
   iconUrl: "./assets/images/characters/thanos.png",
 });
 
+const ironManIcon = new LeafIcon({
+  iconUrl: "./assets/images/characters/iron-man.png",
+});
+
+const spiderManIcon = new LeafIcon({
+  iconUrl: "./assets/images/characters/spider-man.png",
+});
+
+const thorIcon = new LeafIcon({
+  iconUrl: "./assets/images/characters/thor.png",
+});
+
+const captainIcon = new LeafIcon({
+  iconUrl: "./assets/images/characters/captain-america.png",
+});
+const doctorIcon = new LeafIcon({
+  iconUrl: "./assets/images/characters/doctor-strange.png",
+});
+
 const stones = [
   {
     name: "Power Stone",
@@ -57,5 +76,33 @@ const stones = [
     name: "Mind Stone",
     icon: mindStone,
     loc: [35.7, 137],
+  },
+];
+
+const avengers = [
+  {
+    name: "Iron Man",
+    icon: ironManIcon,
+    loc: [37, -108],
+  },
+  {
+    name: "Spider man",
+    icon: spiderManIcon,
+    loc: [34, -106],
+  },
+  {
+    name: "Thor",
+    icon: thorIcon,
+    loc: [40, -112],
+  },
+  {
+    name: "Captain America",
+    icon: captainIcon,
+    loc: [67, -50],
+  },
+  {
+    name: "Doctor Strange",
+    icon: doctorIcon,
+    loc: [70, -50],
   },
 ];
